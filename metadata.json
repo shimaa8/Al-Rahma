@@ -1,0 +1,8 @@
+{
+  "name": "Al-Rahma - Sadaqah Jariyah",
+  "description": "A dedicated Islamic application featuring the Holy Quran, Qibla Compass, electronic Masbaha, and AI-generated Duas, created as a Sadaqah Jariyah.",
+  "requestFramePermissions": [
+    "geolocation",
+    "microphone"
+  ]
+}

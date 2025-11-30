@@ -36,7 +36,6 @@
         font-family: 'Amiri', serif;
         line-height: 2.2;
       }
-      /* Custom scrollbar for better aesthetics */
       ::-webkit-scrollbar {
         width: 8px;
       }
@@ -47,18 +46,17 @@
         background: #292524;
       }
       ::-webkit-scrollbar-thumb {
-        background: #d97706; /* amber-600 */
+        background: #d97706;
         border-radius: 4px;
       }
       ::-webkit-scrollbar-thumb:hover {
         background: #b45309;
       }
-      /* Prevent iOS tap highlight */
       * {
         -webkit-tap-highlight-color: transparent;
       }
     </style>
-<script type="importmap">
+  <script type="importmap">
 {
   "imports": {
     "react": "https://aistudiocdn.com/react@^19.2.0",
@@ -75,6 +73,7 @@
 </head>
   <body class="bg-stone-50 text-stone-900 dark:bg-stone-950 dark:text-stone-100 transition-colors duration-300 overflow-x-hidden">
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
 </html>

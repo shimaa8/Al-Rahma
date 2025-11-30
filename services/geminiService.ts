@@ -1,12 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 
-// Add declaration to satisfy TypeScript compiler during build
-declare const process: {
-  env: {
-    API_KEY: string;
-  };
-};
-
+// Initialization with API Key from environment variables (handled by Vite during build)
+// process.env.API_KEY will be replaced by the actual string value by Vite
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 export const generateDua = async (fatherName: string, mood: string): Promise<string> => {

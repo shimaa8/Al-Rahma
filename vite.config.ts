@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   return {
     plugins: [react()],
-    base: './', // Crucial for GitHub Pages to load assets correctly
+    base: '/Al-Rahma/', // Crucial for GitHub Pages to load assets correctly
     define: {
       // Safely replace process.env.API_KEY with the actual key string during build
       'process.env.API_KEY': JSON.stringify(env.API_KEY || ''),
